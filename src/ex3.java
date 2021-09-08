@@ -10,7 +10,6 @@ public class ex3 {
         String inputStringU = inputString.toUpperCase();
         inputStringU = inputStringU.replaceAll("\\s+","");
         inputStringU= inputStringU.replaceAll("\\p{Punct}", "");
-        System.out.println(inputStringU);
 
         char[] charArray = inputString.toCharArray();
         String inputStringRev = "";
@@ -21,7 +20,7 @@ public class ex3 {
         String inputStringRevU = inputStringRev.toUpperCase();
         inputStringRevU = inputStringRevU.replaceAll("\\s+","");
         inputStringRevU= inputStringRevU.replaceAll("\\p{Punct}", "");
-        System.out.println(inputStringRevU);
+
 
         if (inputStringU.equals(inputStringRevU)){
             System.out.println(inputString + " - это палиндром");
